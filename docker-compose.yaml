@@ -1,0 +1,6 @@
+services:
+  test-bot:
+    build: .
+    container_name: test-bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
