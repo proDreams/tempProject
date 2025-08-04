@@ -18,7 +18,7 @@ async def start():
     bot = Bot(token=os.getenv('BOT_TOKEN'))
     dp = Dispatcher()
 
-    dp.message.register(send_sticker, Command(commands="/test"))
+    dp.message.register(send_sticker, Command(commands="test"))
     dp.message.register(send_message)
 
     try:
