@@ -1,6 +1,7 @@
 services:
   test-bot:
-    build: .
+#    build: .
+    image: ghcr.io/prodreams/tempproject:latest
     container_name: test-bot
     environment:
       - BOT_TOKEN=${BOT_TOKEN}
